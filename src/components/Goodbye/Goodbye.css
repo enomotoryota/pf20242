@@ -1,0 +1,398 @@
+.GoodBye {
+  margin-top: 50vh;
+}
+
+/* RotationAnimation.css */
+.rotation-container {
+  width: 200px; /* 回転する文字の親要素の幅 */
+  /* height: 200px; */
+  position: relative; /* 絶対位置指定するために相対位置指定 */
+}
+
+.rotating-text {
+  position: absolute; /* 絶対位置指定 */
+  margin-top: 50px;
+  left: 50%; /* 左右中央配置 */
+  transform: translate(-50%, -50%); /* 中央配置 */
+  font-size: 24px; /* 文字のサイズ */
+  animation: rotateAnimation 3s linear infinite; /* 回転アニメーションの適用 */
+  color: rgb(162, 162, 162);
+  /* background-color: #fff; */
+  font-family: "The quick fox jumps over the lazy dog", serif;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); /* 0度回転 */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); /* 360度回転 */
+  }
+}
+
+.clock-container {
+  /* width: 100px; */
+  height: 100px;
+  position: relative;
+}
+
+.clock-svg {
+  width: 130%;
+  height: 300%;
+}
+
+.clock-face {
+  fill: none;
+  /* stroke: #333; */
+  stroke-width: 2;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  stroke: #333;
+  stroke-width: 2;
+}
+
+.second-hand {
+  stroke: red;
+  stroke-width: 1;
+}
+
+.bird {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  animation: moving 16s linear infinite;
+}
+
+.bird.-type_2 {
+  animation-delay: 1s;
+}
+.bird.-type_2:before,
+.bird.-type_2:after {
+  animation-delay: -2s;
+}
+
+.bird.-type_3 {
+  animation-delay: 3s;
+}
+
+@keyframes moving {
+  0% {
+    top: 47vh;
+    left: -2vw;
+  }
+  25% {
+    top: 51vh;
+    left: 23vw;
+  }
+  100% {
+    top: 47vh;
+    left: 101vw;
+  }
+}
+
+.bird:before,
+.bird:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  transform: rotate(-30deg);
+  transform-origin: right bottom;
+}
+
+.bird:before {
+  width: 100%;
+  height: 1px;
+  animation: leftWing 8s linear infinite;
+}
+.bird:after {
+  width: 1px;
+  height: 100%;
+  animation: rightWing 8s linear infinite;
+}
+
+@keyframes leftWing {
+  0% {
+    transform: rotate(-30deg);
+  }
+  2% {
+    transform: rotate(-110deg);
+  }
+  4% {
+    transform: rotate(-30deg);
+  }
+  6% {
+    transform: rotate(-110deg);
+  }
+  8% {
+    transform: rotate(-30deg);
+  }
+  10% {
+    transform: rotate(-110deg);
+  }
+  12% {
+    transform: rotate(-30deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  42% {
+    transform: rotate(-35deg);
+  }
+  72% {
+    transform: rotate(-35deg);
+  }
+  74% {
+    transform: rotate(10deg);
+  }
+  76% {
+    transform: rotate(-30deg);
+  }
+  78% {
+    transform: rotate(-110deg);
+  }
+  80% {
+    transform: rotate(-30deg);
+  }
+  82% {
+    transform: rotate(-110deg);
+  }
+  84% {
+    transform: rotate(-30deg);
+  }
+  86% {
+    transform: rotate(-110deg);
+  }
+  88% {
+    transform: rotate(-30deg);
+  }
+  90% {
+    transform: rotate(-110deg);
+  }
+  92% {
+    transform: rotate(-30deg);
+  }
+  94% {
+    transform: rotate(-110deg);
+  }
+  96% {
+    transform: rotate(-30deg);
+  }
+  98% {
+    transform: rotate(-110deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes rightWing {
+  0% {
+    transform: rotate(30deg);
+  }
+  2% {
+    transform: rotate(110deg);
+  }
+  4% {
+    transform: rotate(30deg);
+  }
+  6% {
+    transform: rotate(110deg);
+  }
+  8% {
+    transform: rotate(30deg);
+  }
+  10% {
+    transform: rotate(110deg);
+  }
+  12% {
+    transform: rotate(30deg);
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  42% {
+    transform: rotate(35deg);
+  }
+  72% {
+    transform: rotate(35deg);
+  }
+  74% {
+    transform: rotate(0deg);
+  }
+  76% {
+    transform: rotate(30deg);
+  }
+  78% {
+    transform: rotate(110deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
+  82% {
+    transform: rotate(110deg);
+  }
+  84% {
+    transform: rotate(30deg);
+  }
+  86% {
+    transform: rotate(110deg);
+  }
+  88% {
+    transform: rotate(30deg);
+  }
+  90% {
+    transform: rotate(110deg);
+  }
+  92% {
+    transform: rotate(30deg);
+  }
+  94% {
+    transform: rotate(110deg);
+  }
+  96% {
+    transform: rotate(30deg);
+  }
+  98% {
+    transform: rotate(110deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+.GoodByeText {
+  font-family: "Kaisei Opti", serif;
+  color: rgb(28, 35, 35);
+}
+
+.scroll-down5 {
+  width: 0.5px;
+  height: 3000px;
+  position: absolute;
+  background: transparent;
+  animation: scrollDown5 1.5s ease 1;
+  border-radius: 100%;
+  margin: 0 auto;
+  /* text-align: right; */
+  right: 150px;
+  z-index: 999;
+}
+
+.scroll-down5:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, #afbbc1, transparent);
+}
+
+@keyframes scrollDown5 {
+  0% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+  45% {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+  55% {
+    transform-origin: bottom;
+    transform: scaleY(1);
+  }
+  100% {
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+}
+
+.scroll-down {
+  width: 0.5px;
+  height: 3000px;
+  position: absolute;
+  background: transparent;
+  animation: scrollDown 59.5s ease 1;
+  border-radius: 100%;
+  margin: 0 auto;
+  /* text-align: right; */
+  right: 120px;
+  z-index: 999;
+}
+
+.scroll-down:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, #000000, transparent);
+}
+
+@keyframes scrollDown {
+  0% {
+    transform-origin: top;
+    transform: scaleX(0);
+  }
+  45% {
+    transform-origin: top;
+    transform: scaleX(1);
+  }
+  55% {
+    transform-origin: bottom;
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: bottom;
+    transform: scaleX(0);
+  }
+}
+
+.scroll-down1 {
+  width: 5.5px;
+  height: 3000px;
+  position: absolute;
+  background: transparent;
+  animation: scrollDown1 30s ease 1;
+  border-radius: 100%;
+  margin: 0 auto;
+  /* text-align: right; */
+  left: 90px;
+  z-index: 999;
+}
+
+.scroll-down1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, #ffffff, transparent);
+}
+
+@keyframes scrollDown1 {
+  0% {
+    transform-origin: top;
+    transform: scaleX(0);
+  }
+  45% {
+    transform-origin: top;
+    transform: scaleX(1);
+  }
+  55% {
+    transform-origin: bottom;
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: bottom;
+    transform: scaleX(0);
+  }
+}

@@ -1,0 +1,109 @@
+.magazine {
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+}
+
+.magazine h1 {
+  font-family: Arial, sans-serif; /* フォントを設定します */
+  margin: 0;
+}
+
+.magazineSection1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 100px;
+}
+
+.magazineSection1 div {
+  /* width: 22%;
+  height: 250px; */
+  /* width: "100%";
+  paddingtop: "100%"; */
+}
+
+.magazineSection2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 180px;
+  gap: 50px; /*縦に20px,横に30pxの余白を指定*/
+}
+
+.magazineSection2 img {
+  width: 22%;
+  height: 250px;
+}
+
+.magazineSection3 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 180px;
+  gap: 50px; /*縦に20px,横に30pxの余白を指定*/
+}
+
+.magazineSection3 img {
+  width: 22%;
+  height: 250px;
+}
+
+.magazineSection4 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 180px;
+  gap: 50px; /*縦に20px,横に30pxの余白を指定*/
+}
+
+.magazineSection4 img {
+  width: 22%;
+  height: 250px;
+}
+
+.magazine {
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 150px; */
+  /*縦に20px,横に30pxの余白を指定*/
+}
+
+@media screen and (max-width: 1500px) {
+  .magazine h1 {
+    font-size: 8rem;
+  }
+
+  .magazineSection1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .magazine h1 {
+    font-size: 8rem;
+  }
+
+  .magazineSection1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .magazine h1 {
+    font-size: 3rem;
+  }
+
+  .magazineSection1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 10px;
+  }
+}

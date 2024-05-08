@@ -1,0 +1,119 @@
+.footer {
+  /* height: 100vh; */
+  margin-top: 20vh;
+}
+
+.footerSectionIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSectionSns {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.footer h1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 12rem;
+}
+
+.footerSectionSns a:visited {
+  color: #93cdff; /*カラーコードは任意*/
+}
+
+.footerSectionSns a:hover {
+  color: aqua;
+}
+.footerSectionSns a:active {
+  color: blue;
+}
+
+.footerSectionSns a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 0;
+  height: 2px;
+  /* background-color: #31aae2; */
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.footerSectionSns a:hover::after {
+  width: 100%;
+}
+
+.footerFooter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footerFooter-p {
+  bottom: 0;
+  opacity: 0.01;
+}
+
+@media screen and (max-width: 1100px) {
+  .footerFooter h1 {
+    font-size: 8rem;
+  }
+  .footerSectionIcons img {
+    width: 100%;
+  }
+  .footerFooter p {
+    font-size: 0.5rem;
+  }
+
+  .footerFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footerFooter h1 {
+    font-size: 7rem;
+  }
+  .footerSectionIcons img {
+    width: 100%;
+  }
+  .footerFooter p {
+    font-size: 0.5rem;
+  }
+
+  .footerFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footerFooter h1 {
+    font-size: 3rem;
+  }
+  .footerSectionIcons img {
+    width: 100%;
+  }
+  .footerFooter p {
+    font-size: 0.5rem;
+  }
+
+  .footerFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30vh;
+  }
+}

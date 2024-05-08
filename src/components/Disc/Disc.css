@@ -1,0 +1,370 @@
+.album {
+  height: 150vh;
+  margin-top: 100vh;
+  margin-bottom: 200vh;
+  width: 100%;
+}
+
+.album .albumSection {
+  /* display: flex; */
+  height: 150vh;
+}
+
+.albumSection-text {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 50%;
+  margin-top: 100vh;
+  text-align: center;
+}
+
+.albumSection p {
+  /* margin-top: 30vh; */
+  color: white;
+}
+
+.albumSection-img {
+  /* opacity: 0.5; */
+  height: 350vh;
+  width: 100%;
+  margin-top: 100vh;
+  position: absolute;
+  z-index: -1;
+  /* border-radius: 30px; */
+}
+
+.image {
+  filter: brightness(0.2);
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  /* object-fit: cover; */
+  /* width: 200vh;
+  height: 100vh; */
+  /* border-radius: 30px; */
+}
+
+.albumSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.albumSection-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* 背景を要素の下に配置 */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  /* 画像を全体表示して切り取ります */
+}
+
+.albumSection .albumSectionContent-num {
+  color: white;
+  font-family: "Outfit", "游ゴシック", YuGothic, "Helvetica",
+    "ヒラギノ角ゴ ProN W3", "HiVragino Kaku Gothic ProN", "メイリオ", Meiryo,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.albumSectionContent {
+  /* display: flex; */
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.albumSectionContent-text {
+  /* margin-right: 100px; */
+  font-family: "Outfit", "游ゴシック", YuGothic, "Helvetica",
+    "ヒラギノ角ゴ ProN W3", "HiVragino Kaku Gothic ProN", "メイリオ", Meiryo,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+}
+
+.albumSectionContent p {
+  left: 0;
+  font-family: "Outfit", "游ゴシック", YuGothic, "Helvetica",
+    "ヒラギノ角ゴ ProN W3", "HiVragino Kaku Gothic ProN", "メイリオ", Meiryo,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.albumSection-textTitle {
+  font-size: 2rem;
+}
+
+.albumSection-textTitle h3 {
+  font-size: 2rem;
+  color: rgb(111, 129, 132);
+}
+
+@media screen and (max-width: 1100px) {
+  .album {
+    height: 200vh;
+    margin-top: 150vh;
+    margin-bottom: 200vh;
+    width: 100%;
+  }
+
+  .albumSection-textTitle {
+    font-size: 1.5rem;
+  }
+
+  .albumSection-textTitle h3 {
+    font-size: 1.5rem;
+    color: rgb(111, 129, 132);
+  }
+
+  .albumSection-text {
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    /* margin-top: 100vh; */
+    /* text-align: center; */
+  }
+
+  .albumSection-img {
+    /* opacity: 0.5; */
+    height: 500vh;
+    width: 100%;
+    /* margin-top: 100vh; */
+    position: absolute;
+    z-index: -1;
+    /* border-radius: 30px; */
+  }
+
+  .image {
+    filter: brightness(0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 150vh;
+    width: 100%;
+    /* object-fit: cover; */
+    /* width: 200vh;
+  height: 100vh; */
+    /* border-radius: 30px; */
+    height: 100%;
+  }
+
+  .album .albumSection {
+    /* display: flex; */
+    /* height: 400vh; */
+  }
+
+  .albumSection-textTitle {
+    height: 100%;
+  }
+
+  .albumSectionContent-text {
+    /* margin-right: 0; */
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .album {
+    height: 200vh;
+    margin-top: 150vh;
+    margin-bottom: 200vh;
+    width: 100%;
+  }
+
+  .albumSection-textTitle {
+    font-size: 1.5rem;
+  }
+
+  .albumSection-textTitle h3 {
+    font-size: 1.5rem;
+    color: rgb(111, 129, 132);
+  }
+
+  .albumSection-text {
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    /* margin-top: 100vh; */
+    /* text-align: center; */
+  }
+
+  .albumSection-img {
+    /* opacity: 0.5; */
+    height: 450vh;
+    width: 100%;
+    /* margin-top: 100vh; */
+    position: absolute;
+    z-index: -1;
+    /* border-radius: 30px; */
+  }
+
+  .image {
+    filter: brightness(0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 150vh;
+    width: 100%;
+    /* object-fit: cover; */
+    /* width: 200vh;
+  height: 100vh; */
+    /* border-radius: 30px; */
+    height: 100%;
+  }
+
+  .album .albumSection {
+    /* display: flex; */
+    /* height: 400vh; */
+  }
+
+  .albumSection-textTitle {
+    height: 100%;
+  }
+
+  .albumSectionContent-text {
+    /* margin-right: 0; */
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .album {
+    height: 200vh;
+    margin-top: 100vh;
+    margin-bottom: 200vh;
+    width: 100%;
+  }
+
+  .albumSection-textTitle {
+    font-size: 1.5rem;
+  }
+
+  .albumSection-textTitle h3 {
+    font-size: 1.5rem;
+    color: rgb(111, 129, 132);
+  }
+
+  .albumSection-text {
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    /* margin-top: 100vh; */
+    /* text-align: center; */
+  }
+
+  .albumSection-img {
+    /* opacity: 0.5; */
+    height: 400vh;
+    width: 100%;
+    /* margin-top: 100vh; */
+    position: absolute;
+    z-index: -1;
+    /* border-radius: 30px; */
+  }
+
+  .image {
+    filter: brightness(0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 150vh;
+    width: 100%;
+    /* object-fit: cover; */
+    /* width: 200vh;
+  height: 100vh; */
+    /* border-radius: 30px; */
+    height: 100%;
+  }
+
+  .album .albumSection {
+    /* display: flex; */
+    /* height: 400vh; */
+  }
+
+  .albumSection-textTitle {
+    height: 100%;
+  }
+
+  .albumSectionContent-text {
+    /* margin-right: 0; */
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .album {
+    height: 150vh;
+    margin-top: 100vh;
+    margin-bottom: 200vh;
+    width: 100%;
+  }
+
+  .albumSection-textTitle {
+    font-size: 1.5rem;
+  }
+
+  .albumSection-textTitle h3 {
+    font-size: 1.5rem;
+    color: rgb(111, 129, 132);
+  }
+
+  .albumSection-text {
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    /* margin-top: 100vh; */
+    /* text-align: center; */
+  }
+
+  .albumSection-img {
+    /* opacity: 0.5; */
+    height: 500vh;
+    width: 100%;
+    /* margin-top: 100vh; */
+    position: absolute;
+    z-index: -1;
+    /* border-radius: 30px; */
+  }
+
+  .image {
+    filter: brightness(0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 150vh;
+    width: 100%;
+    /* object-fit: cover; */
+    /* width: 200vh;
+  height: 100vh; */
+    /* border-radius: 30px; */
+    height: 100%;
+  }
+
+  .album .albumSection {
+    /* display: flex; */
+    /* height: 400vh; */
+  }
+
+  .albumSection-textTitle {
+    height: 100%;
+  }
+
+  .album {
+    height: 150vh;
+    margin-top: 150vh;
+    margin-bottom: 250vh;
+    width: 100%;
+  }
+}

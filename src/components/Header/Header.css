@@ -1,0 +1,197 @@
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-radius: 0;
+  letter-spacing: inherit;
+  -webkit-tap-highlight-color: white;
+  cursor: pointer;
+}
+
+.header {
+  /* position: relative; */
+  display: flex;
+  padding: 0.5rem;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0);
+
+  opacity: 0;
+  animation: fadeInAnimation 3s ease forwards;
+  animation-delay: 2s;
+  /* transform: translate(0px, 1500px); */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header .headerLogo {
+  margin-left: 50px;
+  height: 10vh;
+  width: 10vh;
+}
+
+.toggleButton {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.toggleButton > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.line-1 {
+  transform: translate(0, -10px);
+}
+
+.line-2 {
+  transform: translate(0, 10px);
+}
+
+.toggleButton[aria-expanded="true"] > .line-1 {
+  transform: translate(0, 0) rotate(-45deg);
+}
+
+.toggleButton[aria-expanded="true"] > .line-2 {
+  transform: translate(0, 0) rotate(45deg);
+}
+
+.navigation {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 5rem 2rem; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* left: 0; */
+  height: 70vh;
+  /* background-color: white; */
+}
+
+.navigation[aria-hidden="false"] {
+  display: flex;
+  width: 40%;
+  margin-top: 100px;
+}
+
+.navigation > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 1rem 0; */
+}
+
+.navigation > ul > li {
+  text-align: center;
+  width: 300px;
+  color: white;
+  margin: 5px 0;
+}
+
+.navigationText {
+  writing-mode: vertical-rl; /* テキストを縦書きにします（右から左へ） */
+  text-orientation: mixed; /* 非ブラウザでのサポートに対応するための設定 */
+  line-height: 1.5; /* 行の高さを調整します */
+  font-size: 16px; /* フォントサイズを設定します */
+  font-size: 5rem;
+}
+
+/* モバイル向けスタイル */
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .header .headerLogo {
+    margin-left: 20px;
+    height: 8vh;
+    width: 8vh;
+  }
+
+  .navigation {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .navigation[aria-hidden="false"] {
+    margin-top: 50px;
+  }
+
+  .navigation > ul > li {
+    width: 80%;
+  }
+
+  .navigationText {
+    writing-mode: horizontal-tb; /* テキストを横書きに戻す */
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerLogo img {
+    width: 10rem;
+  }
+
+  .header {
+    /* position: relative; */
+    display: flex;
+    padding: 0.5rem;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+
+    opacity: 0;
+    animation: fadeInAnimation 3s ease forwards;
+    animation-delay: 2s;
+    align-items: flex-start;
+  }
+
+  .navigation[aria-hidden="false"] {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+  }
+}

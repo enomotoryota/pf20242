@@ -1,0 +1,10 @@
+.fixed-scroll-scaling-text {
+  position: fixed; /* テキストを固定位置に配置します */
+  top: 50%; /* 上端を画面の中央に配置します */
+  left: 50%; /* 左端を画面の中央に配置します */
+  transform: translate(-50%, -50%); /* テキストを中央揃えにします */
+  font-family: Arial, sans-serif; /* フォントを設定します */
+  text-align: center; /* テキストを中央揃えにします */
+  transition: font-size 0.1s; /* フォントサイズの変化をアニメーション化します */
+  color: white;
+}

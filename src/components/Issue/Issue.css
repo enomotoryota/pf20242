@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+.Issue {
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+}
+
+.Issue .IssueSection {
+  height: 70vh;
+  /* width: 50vh; */
+  /* background-color: lightyellow;
+  opacity: 0.7; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-bottom: 30vh;
+}
+
+.Issue .IssueSection-title {
+  font-size: 24px;
+  writing-mode: vertical-rl;
+  font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.Issue .IssueSection-text {
+  background-color: lightyellow;
+  opacity: 0.7;
+  /* width: 100%; */
+  font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-size: 28px;
+  color: #333;
+  position: relative;
+  letter-spacing: 0.5em;
+  line-height: 2em;
+  padding: 5px;
+  float: right;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.IssueSection-text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 0
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 0),
+    linear-gradient(
+      to left,
+      transparent 11px,
+      rgba(0, 0, 0, 0.2) 12px,
+      transparent 0
+    );
+  background-size: 2em 1.5em;
+  background-position: top right;
+  background-origin: padding-box;
+  margin-right: -5px;
+  z-index: -1;
+}
+
+.IssueSection-text::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.IssueSection-text p {
+  margin: 0;
+  margin-right: 0;
+  margin-top: 0.3em;
+  color: black;
+}
+.IssueSection-text ruby {
+  ruby-align: left;
+}
+.IssueSection-text ruby > rt {
+  font-size: 10px;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 1em;
+  transform: translateX(0.8em);
+  margin-left: 0.8em;
+}
+
+.IssueSection-textNote {
+  font-size: 24px;
+  writing-mode: vertical-rl;
+  font-size: 0.5rem;
+  padding-top: 50vh;
+}
+
+@media screen and (max-width: 600px) {
+  .Issue .IssueSection {
+    height: 70vh;
+    /* width: 50vh; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* margin-bottom: 30vh; */
+  }
+
+  .IssueSection-text {
+    /* height: 100vh; */
+    width: 83%;
+    margin: 0 auto;
+  }
+
+  .IssueSection-textNote {
+    font-size: 24px;
+    writing-mode: horizontal-tb;
+    font-size: 0.5rem;
+    padding-top: 0;
+  }
+  .Issue .IssueSection-text {
+    background-color: lightyellow;
+    opacity: 0.7;
+    /* width: 100%; */
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E",
+      "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 15px;
+    color: #333;
+    position: relative;
+    letter-spacing: 0.5em;
+    line-height: 2.2em;
+    padding: 5px;
+    float: right;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
+  
+}
+
+@media screen and (max-width: 380px) {
+
+
+  .Issue .IssueSection-text {
+    background-color: lightyellow;
+    opacity: 0.7;
+    /* width: 100%; */
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E",
+      "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size: 8px;
+    color: #333;
+    position: relative;
+    letter-spacing: 0.5em;
+    line-height: 2em;
+    padding: 5px;
+    float: right;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
+
+  .IssueSection-text ruby > rt {
+    font-size: 5px;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 1em;
+    transform: translateX(0.8em);
+    margin-left: 0.8em;
+  }
+}
